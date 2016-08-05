@@ -1,2 +1,2 @@
 # HttpVehicle
-Easy to use http/https automation library in C# 
+Multi-purpose http/https automation library, allowing easy recipes creation.

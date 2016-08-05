@@ -1,0 +1,28 @@
+//TODO : extract/replace validated from Validators!
+//TODO : savers logging - lines of data written for multivalue instead of chars
+//TODO : encoding changing
+//TODO : JSON parsers
+//TODO : XML parsers
+//TODO : Verry good proxy checking and understanding about https enabled and bad requests errors
+//TODO : file depleted clause
+//TODO : multy value informers
+//TODO : different logic custom wording username informers
+//TODO : hash LinuxEpoch e.g. parsers
+
+
+//TODO : Validators result if contains string
+//TODO : Multyvalue validation (string[] count)
+//TODO : user funcs as delegates for parsers
+//TODO : proxy history
+//TODO : Integrate cryptography
+//TODO : Check documentation comments
+
+
+//TODO : Integrate JS engine
+//TODO : Integrate simple OCR
+//TODO : Integrate file convertors
+//TODO : SQL support/ steganography support
+//TODO : proxy checking; proxy filter by type; proxy filter by info;
+//TODO : google search
+//TODO : streaming
+//TODO : random with percenage (34/66 male/female e.g.)

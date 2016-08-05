@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1BF16F99-DFF7-4966-958D-4F95D9148064}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HttpVehicle</RootNamespace>
+    <AssemblyName>HttpVehicle</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\Dlls\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="PreMailer.Net">
+      <HintPath>..\Dlls\PreMailer.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Engine\HttpEngineCore.cs" />
+    <Compile Include="Engine\HttpEngineData.cs" />
+    <Compile Include="Engine\HttpEngineDataHtml.cs" />
+    <Compile Include="Engine\HttpEngineInput.cs" />
+    <Compile Include="Engine\HttpEngineOutput.cs" />
+    <Compile Include="Engine\HttpEngineRequests.cs" />
+    <Compile Include="Engine\HttpEngineValidators.cs" />
+    <Compile Include="Engine\HttpVehicleClauses.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statics\Informers.cs" />
+    <Compile Include="Statics\IO.cs" />
+    <Compile Include="Statics\ParsersExtractors.cs" />
+    <Compile Include="Statics\ParsersHtml.cs" />
+    <Compile Include="Statics\Validators.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Data\Names_1F_BG.txt" />
+    <Content Include="Data\Names_1F_RU.txt" />
+    <Content Include="Data\Names_1F_UK.txt" />
+    <Content Include="Data\Names_1M_BG.txt" />
+    <Content Include="Data\Names_1M_RU.txt" />
+    <Content Include="Data\Names_1M_UK.txt" />
+    <Content Include="Data\Names_2F_BG.txt" />
+    <Content Include="Data\Names_2F_RU.txt" />
+    <Content Include="Data\Names_2M_BG.txt" />
+    <Content Include="Data\Names_2M_RU.txt" />
+    <Content Include="Data\Names_2_UK.txt" />
+    <Content Include="Data\Names_Hobbit_1M.txt" />
+    <Content Include="Data\Names_Hobbit_2M.txt" />
+    <Content Include="Data\UserAgents.txt" />
+    <Content Include="Data\Words_BG.txt" />
+    <Content Include="Data\Words_EN.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
